@@ -6,9 +6,10 @@
     <title>Happy Birthday Jiya 🎂🌹</title>
     <style>
         body {
-            background-color: #ffebf0;
+            background: linear-gradient(45deg, #ff9a9e, #fad0c4);
             text-align: center;
             font-family: Arial, sans-serif;
+            overflow: hidden;
         }
         h1 {
             color: #e91e63;
@@ -17,10 +18,7 @@
         }
         p {
             font-size: 20px;
-            color: #555;
-        }
-        .container {
-            margin-top: 20px;
+            color: #fff;
         }
         .gif {
             width: 300px;
@@ -42,16 +40,36 @@
         .btn:hover {
             background-color: #d81b60;
         }
+        .balloon {
+            position: absolute;
+            width: 50px;
+            animation: float 6s infinite ease-in-out;
+        }
+        @keyframes float {
+            0% { transform: translateY(100vh); opacity: 1; }
+            100% { transform: translateY(-10vh); opacity: 0; }
+        }
     </style>
 </head>
 <body>
     <h1>🎉 Happy Birthday Jiya! 🎂</h1>
     <p>May your day be filled with love, joy, and lots of chocolates & roses! 🌹🍫</p>
-    
-    <div class="container">
-        <img src="https://media.tenor.com/2vYdT0hTV6oAAAAC/happy-birthday.gif" alt="Happy Birthday" class="gif">
-    </div>
-
+    <img src="https://media.tenor.com/2vYdT0hTV6oAAAAC/happy-birthday.gif" alt="Happy Birthday" class="gif">
+    <br>
     <a href="https://www.youtube.com/watch?v=ho07Ip6FbPA" class="btn" target="_blank">🎶 Play Birthday Song 🎶</a>
+    
+    <script>
+        function createBalloons() {
+            for (let i = 0; i < 15; i++) {
+                let balloon = document.createElement("img");
+                balloon.src = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Balloons_2020.svg/1024px-Balloons_2020.svg.png";
+                balloon.className = "balloon";
+                balloon.style.left = Math.random() * 100 + "vw";
+                balloon.style.animationDuration = (Math.random() * 3 + 3) + "s";
+                document.body.appendChild(balloon);
+            }
+        }
+        createBalloons();
+    </script>
 </body>
 </html>
