@@ -3,73 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday Jiya 🎂🌹</title>
+    <title>Happy Birthday Jiya 🎉</title>
     <style>
         body {
-            background: linear-gradient(45deg, #ff9a9e, #fad0c4);
-            text-align: center;
-            font-family: Arial, sans-serif;
-            overflow: hidden;
+    background: url('https://drive.google.com/file/d/19MAxtZfrCM9gKb3eECq1fN5Z7IZnZQuP/view?usp=sharing') no-repeat center center fixed;
+    background-size: cover;
+}
+
+        .container {
+            margin-top: 100px;
         }
         h1 {
-            color: #e91e63;
-            font-size: 40px;
-            margin-top: 50px;
-        }
-        p {
-            font-size: 20px;
-            color: #fff;
-        }
-        .gif {
-            width: 300px;
+            font-size: 50px;
+            background: rgba(0, 0, 0, 0.6);
+            display: inline-block;
+            padding: 10px 20px;
             border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
         }
         .btn {
             display: inline-block;
-            padding: 12px 24px;
             margin-top: 20px;
-            font-size: 18px;
+            padding: 15px 25px;
+            font-size: 20px;
             color: white;
-            background-color: #e91e63;
+            background-color: #ff4d6d;
             border: none;
-            border-radius: 8px;
+            border-radius: 10px;
             text-decoration: none;
             transition: 0.3s;
         }
         .btn:hover {
-            background-color: #d81b60;
-        }
-        .balloon {
-            position: absolute;
-            width: 50px;
-            animation: float 6s infinite ease-in-out;
-        }
-        @keyframes float {
-            0% { transform: translateY(100vh); opacity: 1; }
-            100% { transform: translateY(-10vh); opacity: 0; }
+            background-color: #ff1a4d;
         }
     </style>
 </head>
 <body>
-    <h1>🎉 Happy Birthday Jiya! 🎂</h1>
-    <p>May your day be filled with love, joy, and lots of chocolates & roses! 🌹🍫</p>
-    <img src="https://media.tenor.com/2vYdT0hTV6oAAAAC/happy-birthday.gif" alt="Happy Birthday" class="gif">
-    <br>
-    <a href="https://youtu.be/UcqI3uBKgTg?si=IOeegdNd8B4nN8NA" class="btn" target="_blank">🎶 Play Song For Youh 🎶</a>
-    
-    <script>
-        function createBalloons() {
-            for (let i = 0; i < 15; i++) {
-                let balloon = document.createElement("img");
-                balloon.src = "https://bg.jpg";
-                balloon.className = "balloon";
-                balloon.style.left = Math.random() * 100 + "vw";
-                balloon.style.animationDuration = (Math.random() * 3 + 3) + "s";
-                document.body.appendChild(balloon);
-            }
-        }
-        createBalloons();
-    </script>
+    <div class="container">
+        <h1>🎂 Happy Birthday Jiya! 🎉</h1>
+        <p>Wishing you lots of love, happiness, and joy on your special day! 💖</p>
+        <a href="https://www.youtube.com/watch?v=RghBQ6ZprkE" class="btn" target="_blank">🎶 Song For Youh 🎶</a>
+
+    </div>
 </body>
 </html>
